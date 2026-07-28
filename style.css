@@ -1,0 +1,99 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.2s ease;
+}
+
+ul li a:hover,
+ul li a.active {
+  color: #c55000;
+}
+
+ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #c55000;
+  transition: width 0.3s ease;
+}
+
+ul li a:hover::after,
+ul li a.active::after {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding-top: 80px;
+}
+
+header nav {
+  z-index: 1030;
+}
+
+.home-hero {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('tokok.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.home-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.15) 45%, rgba(0, 0, 0, 0.65) 100%);
+}
+
+.home-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-subtitle {
+  letter-spacing: 0.18em;
+}
+
+.hero-copy h1,
+.hero-copy h2,
+.hero-copy p {
+  margin-bottom: 0.85rem;
+}
+
+.highlight {
+  color: #c55c00;
+}
+
+.btn-warning {
+  background-color: #c55c00;
+  border-color: #c55c00;
+}
+
+.btn-warning:hover,
+.btn-warning:focus {
+  background-color: #e17316;
+  border-color: #e17316;
+}
+
+.btn-outline-light {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.btn-outline-light:hover,
+.btn-outline-light:focus {
+  color: #000000;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
