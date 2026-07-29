@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Company Profile</title>
@@ -10,14 +9,13 @@
     <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-</head>
 <body>
   <section id="top-section" style="font-size: 14px; border-bottom: 2px solid #FF6F00; background-color: #0b2c49; font-family: 'Roboto', sans-serif;">
     <div id="qodef-top-area">
         <div class="mt-1  px-5">
             <!-- Tambahkan 'justify-content-end' di sini -->
             <div class="social-links mt-1 d-flex align-items-center justify-content-end gap-2">
-                <span class="text-white me-2 fs-5">Follow us:</span>
+                <span class="text-white me-2 fs-5 d-none d-sm-inline">Follow us:</span>
                 <a href="https://www.instagram.com/edsignprint" target="_blank" title="Instagram" class="text-white me-2 text-decoration-none">
                     <i class="bi bi-instagram fs-3"></i>
                 </a>
@@ -28,23 +26,28 @@
         </div>
     </div>
     </section>
-    <header>
-        <nav class="d-flex align-items-center justify-content-between px-5 py-3 bg-white">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+                <div class="container-fluid px-5">
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                        <img src="dump/logoo.png" alt="Logo EdSign" width="120">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-    <div class="logo">
-        <img src="dump/logoo.png" alt="Logo EdSign" width="120">
-    </div>
-
-    <ul class="d-flex align-items-center gap-4 list-unstyled m-0">
-
-        <li><a href="index.html" class="nav-link active">Beranda</a></li>
-        <li><a href="about.html" class="nav-link">Tentang Kami</a></li>
-        <li><a href="product.html" class="nav-link">Produk</a></li>
-        <li><a href="https://shopee.co.id/edsigndigitalprint" class="nav-link">E-Commerce</a></li>
-        <li><a href="contact.html" class="nav-link">Hubungi Kami</a></li>
-    </ul>
-    </nav>
-    </header>
+                    <div class="collapse navbar-collapse" id="mainNavbar">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                            <li class="nav-item"><a class="nav-link active" href="index.html">Beranda</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">Tentang Kami</a></li>
+                            <li class="nav-item"><a class="nav-link" href="product.html">Produk</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://shopee.co.id/edsigndigitalprint">E-Commerce</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Hubungi Kami</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
         <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -83,9 +86,13 @@
                 <div class="col-lg-7">
                     <p class="text-uppercase text-white small mb-3 hero-subtitle">PRECISION IN EVERY PRINT</p>
                     <div class="hero-copy text-white">
-                        <h1 class="display-5 fw-bold mb-2">Solusi Cetak Digital</h1>
+                        <h1 class="display-4 display-md-3 fw-bold mb-2">Solusi Cetak Digital</h1>
                         <h2 class="display-6 fw-bold mb-2"><span class="highlight">Berkualitas & Cepat</span></h2>
-                        <p class="lead fw-l mb-4">Ed'Sign hadir sebagai mitra percetakan yang dapat diandalkan untuk kebutuhan pribadi maupun bisnis anda.</p>
+                        <p class="lead fw-medium fs-5 fs-md-1 mb-4">Ed'Sign hadir sebagai mitra percetakan yang dapat diandalkan untuk kebutuhan pribadi maupun bisnis anda.</p>
+                            <div class="d-flex gap-2 flex-wrap flex-column flex-md-row">
+                                <a href="#produk" class="btn btn-warning btn-lg no-radius hubungi-btn">HUBUNGI KAMI</a>
+                                <a href="#contact" class="btn btn-outline-light btn-lg no-radius">LIHAT PRODUK</a>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -97,7 +104,7 @@
         <footer class="site-footer bg-white text-dark">
             <div class="container py-5">
                 <div class="row g-4">
-                    <div class="col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-3">
                         <h3 class="footer-logo">Edsign.</h3>
                         <p class="footer-desc">
                             Mitra percetakan digital yang membantu Anda mencetak kebutuhan promosi, branding, dan identitas bisnis dengan kualitas terbaik.
@@ -108,7 +115,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-2">
+                    <div class="col-12 col-md-6 col-lg-3">
                         <h4> Layanan</h4>
                         <ul class="list-unstyled small mb-0">
                             <li><a class="text-muted text-decoration-none" href="#katalog">Katalog Produk</a></li>
@@ -117,7 +124,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-2">
+                    <div class="col-12 col-md-6 col-lg-3">
                         <h4> Perusahaan</h4>
                         <ul class="list-unstyled small mb-0">
                             <li><a class="text-muted text-decoration-none" href="#home">Beranda</a></li>
@@ -127,7 +134,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-3">
                         <h4> Hubungi Kami</h4>
                         <p class="small text-muted">Butuh konsultasi cepat untuk kebutuhan cetak Anda? Langsung hubungi tim kami melalui WhatsApp.</p>
                         <a class="btn btn-outline-primary btn-sm" href="https://wa.me/6281316165756">Konsultasi Sekarang</a>
@@ -138,8 +145,12 @@
                     <div class="col-md-6">
                         <p class="mb-0 small">&copy; 2026 Ed'Sign Digital Print. Semua hak cipta dilindungi.</p>
                     </div>
+                    <div class="col-md-6 text-md-end">
+                        <p class="mb-0 small">RPL - SMKN 40 Jakarta</p>
+                    </div>
                 </div>
             </div>
         </footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -166,3 +166,13 @@ nav {
 .site-footer .border-top {
   border-color: #e5e7eb !important;
 }
+
+/* Utility to remove border radius on specific buttons */
+.no-radius {
+  border-radius: 0 !important;
+}
+
+/* Ensure the HUBUNGI KAMI button text is white */
+.hubungi-btn {
+  color: #ffffff !important;
+}
