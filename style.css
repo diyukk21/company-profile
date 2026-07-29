@@ -178,27 +178,42 @@ nav {
 }
 
 .product-filter-wrap {
+  position: relative;
   display: inline-flex;
   gap: 0.25rem;
   align-items: center;
   background: #FF6F00;
   padding: 0.25rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 0.5rem;
+  border-radius: 100px;
   overflow-x: auto;
   width: 100%;
   max-width: 100%;
+  isolation: isolate;
+}
+
+.product-filter-slider {
+  position: absolute;
+  top: 0.25rem;
+  bottom: 0.25rem;
+  left: 0.25rem;
+  border-radius: 999px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: left 0.25s ease, width 0.25s ease;
+  z-index: 0;
 }
 
 .product-filter-btn {
+  position: relative;
+  z-index: 1;
   border: 0;
   background: transparent;
   color: #ffffff;
   padding: 0.3rem 0.6rem;
-  border-radius: 0.35rem;
+  border-radius: 100px;
   font-size: 0.75rem;
   font-weight: 600;
-  transition: all 0.2s ease;
+  transition: color 0.2s ease;
   white-space: nowrap;
 }
 
@@ -207,7 +222,6 @@ nav {
 }
 
 .product-filter-btn.active {
-  background-color: #ffffff;
   color: #000000;
 }
 

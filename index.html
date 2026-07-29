@@ -108,11 +108,12 @@
     </div>
 
     <!-- Kanan: Filter -->
-    <div class="product-filter-wrap">
+    <div class="product-filter-wrap" id="productFilterWrap">
+        <div class="product-filter-slider" id="productFilterSlider"></div>
         <button type="button" onclick="filterProducts('all')" id="tab-all" class="product-filter-btn active">Semua</button>
-        <button type="button" onclick="filterProducts('display')" id="tab-display" class="product-filter-btn">Display</button>
-        <button type="button" onclick="filterProducts('merch')" id="tab-merch" class="product-filter-btn">Merchandise</button>
-        <button type="button" onclick="filterProducts('stationery')" id="tab-stationery" class="product-filter-btn">Stasioneri</button>
+        <button type="button" onclick="filterProducts('display')" id="tab-display" class="product-filter-btn">Indoor</button>
+        <button type="button" onclick="filterProducts('merch')" id="tab-merch" class="product-filter-btn">Outdoor</button>
+        <button type="button" onclick="filterProducts('stationery')" id="tab-stationery" class="product-filter-btn">Merchandise</button>
     </div>
 </div>
         </div>
@@ -169,12 +170,28 @@
         </footer>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+        function updateFilterSlider(category = 'all') {
+            const activeButton = document.getElementById(`tab-${category}`);
+            const slider = document.getElementById('productFilterSlider');
+
+            if (!activeButton || !slider) return;
+
+            slider.style.left = `${activeButton.offsetLeft}px`;
+            slider.style.width = `${activeButton.offsetWidth}px`;
+        }
+
         function filterProducts(category) {
             const buttons = document.querySelectorAll('.product-filter-btn');
             buttons.forEach((button) => {
                 button.classList.toggle('active', button.id === `tab-${category}`);
             });
+            updateFilterSlider(category);
         }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            updateFilterSlider('all');
+            window.addEventListener('resize', () => updateFilterSlider(document.querySelector('.product-filter-btn.active')?.id.replace('tab-', '') || 'all'));
+        });
     </script>
 </body>
 </html>
