@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Company Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+</head>
 <body>
+  <section id="top-section" style="font-size: 14px; border-bottom: 2px solid #FF6F00; background-color: #0b2c49; font-family: 'Roboto', sans-serif;">
+    <div id="qodef-top-area">
+        <div class="mt-1  px-5">
+            <!-- Tambahkan 'justify-content-end' di sini -->
+            <div class="social-links mt-1 d-flex align-items-center justify-content-end gap-2">
+                <span class="text-white me-2">Follow us:</span>
+                <a href="https://www.instagram.com/edsignprint" target="_blank" title="Instagram" class="text-white me-2 text-decoration-none">
+                    <i class="bi bi-instagram fs-3"></i>
+                </a>
+                <a href="https://www.tiktok.com/@edsignprint" target="_blank" title="TikTok" class="text-white text-decoration-none">
+                    <i class="bi bi-tiktok fs-3"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    </section>
     <header>
-        <nav class="fixed-top d-flex align-items-center justify-content-between px-5 py-3 bg-white  shadow-sm">
+        <nav class="d-flex align-items-center justify-content-between px-5 py-3 bg-white">
 
     <div class="logo">
         <img src="dump/logoo.png" alt="Logo EdSign" width="120">
@@ -26,6 +46,37 @@
     </nav>
     </header>
 
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const nav = document.querySelector('nav');
+            const topSection = document.getElementById('top-section');
+            const topHeight = topSection ? topSection.offsetHeight : 0;
+
+            function setFixed() {
+                if (window.scrollY >= topHeight) {
+                    if (!nav.classList.contains('fixed-top')) {
+                        nav.classList.add('fixed-top','shadow-sm');
+                        document.body.style.paddingTop = nav.offsetHeight + 'px';
+                    }
+                } else {
+                    if (nav.classList.contains('fixed-top')) {
+                        nav.classList.remove('fixed-top','shadow-sm');
+                        document.body.style.paddingTop = '';
+                    }
+                }
+            }
+
+            // Initialize correctly on load
+            setFixed();
+            window.addEventListener('scroll', setFixed);
+            window.addEventListener('resize', function() {
+                if (nav.classList.contains('fixed-top')) {
+                    document.body.style.paddingTop = nav.offsetHeight + 'px';
+                }
+            });
+        });
+        </script>
+
     <section id="home" class="home-hero d-flex align-items-center">
         <div class="container">
             <div class="row align-items-center">
@@ -40,5 +91,58 @@
             </div>
         </div>
     </section>
+    <section id="produk">
+        
+    </section>
+        <footer class="site-footer bg-white text-dark">
+            <div class="container py-5">
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <h3 class="footer-logo">Edsign.</h3>
+                        <p class="footer-desc">
+                            Mitra percetakan digital yang membantu Anda mencetak kebutuhan promosi, branding, dan identitas bisnis dengan kualitas terbaik.
+                        </p>
+                        <div class="social-links">
+                            <a class="me-3 text-decoration-none text-muted" href="https://wa.me/6281316165756" aria-label="WhatsApp">WhatsApp</a>
+                            <a class="text-decoration-none text-muted" href="https://shopee.co.id/edsigndigitalprint" aria-label="Shopee">Shopee</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <h4> Layanan</h4>
+                        <ul class="list-unstyled small mb-0">
+                            <li><a class="text-muted text-decoration-none" href="#katalog">Katalog Produk</a></li>
+                            <li><a class="text-muted text-decoration-none" href="#client">Klien Kami</a></li>
+                            <li><a class="text-muted text-decoration-none" href="#order">Pesan Sekarang</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <h4> Perusahaan</h4>
+                        <ul class="list-unstyled small mb-0">
+                            <li><a class="text-muted text-decoration-none" href="#home">Beranda</a></li>
+                            <li><a class="text-muted text-decoration-none" href="#katalog">Katalog</a></li>
+                            <li><a class="text-muted text-decoration-none" href="#client">Mitra</a></li>
+                            <li><a class="text-muted text-decoration-none" href="#order">Kontak</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <h4> Hubungi Kami</h4>
+                        <p class="small text-muted">Butuh konsultasi cepat untuk kebutuhan cetak Anda? Langsung hubungi tim kami melalui WhatsApp.</p>
+                        <a class="btn btn-outline-primary btn-sm" href="https://wa.me/6281316165756">Konsultasi Sekarang</a>
+                    </div>
+                </div>
+
+                <div class="row mt-4 pt-3 border-top">
+                    <div class="col-md-6">
+                        <p class="mb-0 small">&copy; 2026 Ed'Sign Digital Print. Semua hak cipta dilindungi.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p class="mb-0 small">RPL - SMKN 40 Jakarta</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
 </body>
 </html>

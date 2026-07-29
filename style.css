@@ -32,11 +32,22 @@ ul li a.active::after {
 
 body {
   margin: 0;
-  padding-top: 80px;
+  padding-top: 0;
 }
 
 header nav {
   z-index: 1030;
+}
+
+#top-section {
+  color: #fff;
+  padding: 8px 0;
+  background-color: #0b2c49;
+  border-bottom: 2px solid #FF6F00;
+}
+
+nav {
+  transition: top 0.15s ease, box-shadow 0.15s ease;
 }
 
 .home-hero {
@@ -96,4 +107,52 @@ header nav {
   color: #000000;
   background-color: #ffffff;
   border-color: #ffffff;
+}
+
+/* Footer styles adapted to Bootstrap structure */
+.site-footer {
+  background-color: #ffffff;
+  color: #191919;
+}
+.site-footer .footer-logo {
+  color: #000000;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.site-footer .footer-desc {
+  line-height: 1.6;
+  margin-bottom: .5rem;
+  font-size: 0.9rem;
+  color: #374151;
+}
+.site-footer h4 {
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.site-footer ul {
+  padding-left: 0;
+}
+.site-footer a {
+  color: #374151;
+}
+.site-footer a:hover {
+  color: #38bdf8;
+  text-decoration: none;
+}
+.site-footer .social-links a {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.site-footer .btn-outline-primary {
+  border-color: #0284c7;
+  color: #0284c7;
+}
+.site-footer .btn-outline-primary:hover {
+  background-color: #0284c7;
+  color: #fff;
+}
+
+.site-footer .border-top {
+  border-color: #e5e7eb !important;
 }
