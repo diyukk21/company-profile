@@ -43,7 +43,7 @@
               title="Instagram"
               class="text-white me-2 text-decoration-none"
             >
-              <i class="bi bi-instagram fs-3"></i>
+              <i class="bi bi-instagram fs-4"></i>
             </a>
             <a
               href="https://www.tiktok.com/@edsignprint"
@@ -51,14 +51,14 @@
               title="TikTok"
               class="text-white text-decoration-none"
             >
-              <i class="bi bi-tiktok fs-3"></i>
+              <i class="bi bi-tiktok fs-4"></i>
             </a>
           </div>
         </div>
       </div>
     </section>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-2">
         <div class="container-fluid px-5">
           <a class="navbar-brand d-flex align-items-center" href="#">
             <img src="dump/logoo.png" alt="Logo EdSign" width="120" />
@@ -204,7 +204,105 @@
         </div>
       </div>
 
-      <div class="flex-grow-1 px-5"></div>
+      <div class="flex-grow-1 px-5 py-4">
+        <div class="row g-4" id="productGrid">
+          <article class="col-12 col-sm-6 col-lg-3 product-card" data-category="display">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <span class="badge text-bg-warning mb-3">Indoor</span>
+                <h5 class="card-title mb-2">Spanduk Indoor Premium</h5>
+                <p class="card-text text-muted small mb-0">
+                  Cocok untuk event, pameran, dan promosi dalam ruangan dengan warna tajam.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-sm-6 col-lg-3 product-card" data-category="display">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <span class="badge text-bg-warning mb-3">Indoor</span>
+                <h5 class="card-title mb-2">Poster A1 Cetak Tajam</h5>
+                <p class="card-text text-muted small mb-0">
+                  Visual detail tinggi untuk kebutuhan promosi dan papan informasi.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-sm-6 col-lg-3 product-card" data-category="display">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <span class="badge text-bg-warning mb-3">Indoor</span>
+                <h5 class="card-title mb-2">Signage Standee</h5>
+                <p class="card-text text-muted small mb-0">
+                  Solusi branding yang praktis untuk booth, toko, dan acara khusus.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-sm-6 col-lg-3 product-card" data-category="merch">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <span class="badge text-bg-primary mb-3">Outdoor</span>
+                <h5 class="card-title mb-2">Billboard Vinyl</h5>
+                <p class="card-text text-muted small mb-0">
+                  Cocok untuk iklan luar ruangan yang tahan cuaca dan terlihat jelas dari jauh.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-sm-6 col-lg-3 product-card" data-category="merch">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <span class="badge text-bg-primary mb-3">Outdoor</span>
+                <h5 class="card-title mb-2">Banner Baliho</h5>
+                <p class="card-text text-muted small mb-0">
+                  Pilihan utama untuk promosi acara, launching, dan kampanye besar.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-sm-6 col-lg-3 product-card" data-category="merch">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <span class="badge text-bg-primary mb-3">Outdoor</span>
+                <h5 class="card-title mb-2">X Banner & Roll Up</h5>
+                <p class="card-text text-muted small mb-0">
+                  Praktis untuk booth, expo, dan penempatan di area publik.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-sm-6 col-lg-3 product-card" data-category="stationery">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <span class="badge text-bg-success mb-3">Merchandise</span>
+                <h5 class="card-title mb-2">Kartu Nama Premium</h5>
+                <p class="card-text text-muted small mb-0">
+                  Identitas bisnis yang elegan dan siap dipakai untuk branding harian.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-sm-6 col-lg-3 product-card" data-category="stationery">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <span class="badge text-bg-success mb-3">Merchandise</span>
+                <h5 class="card-title mb-2">Notebook Custom</h5>
+                <p class="card-text text-muted small mb-0">
+                  Cocok untuk giveaway, seminar, dan kebutuhan kantor yang personal.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
     <footer class="site-footer bg-white text-dark">
       <div class="container py-5">
@@ -310,14 +408,34 @@
 
       function filterProducts(category) {
         const buttons = document.querySelectorAll(".product-filter-btn");
+        const cards = document.querySelectorAll(".product-card");
+
         buttons.forEach((button) => {
           button.classList.toggle("active", button.id === `tab-${category}`);
         });
+
+        cards.forEach((card) => {
+          const match = category === "all" || card.dataset.category === category;
+          card.classList.toggle("d-none", !match);
+        });
+
         updateFilterSlider(category);
       }
 
       document.addEventListener("DOMContentLoaded", function () {
-        updateFilterSlider("all");
+        const productCards = document.querySelectorAll(".product-card .card");
+
+        productCards.forEach((card) => {
+          if (!card.querySelector("img.card-media")) {
+            const img = document.createElement("img");
+            img.src = "kalender.png";
+            img.alt = "Contoh produk kalender";
+            img.className = "card-media";
+            card.prepend(img);
+          }
+        });
+
+        filterProducts("all");
         window.addEventListener("resize", () =>
           updateFilterSlider(
             document
