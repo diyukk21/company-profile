@@ -117,7 +117,7 @@ nav {
 .site-footer .footer-logo {
   color: #000000;
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 500;
 }
 .site-footer .footer-desc {
   line-height: 1.6;
@@ -128,7 +128,7 @@ nav {
 .site-footer h4 {
   color: #000000;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 400;
 }
 .site-footer ul {
   padding-left: 0;
@@ -141,15 +141,25 @@ nav {
   text-decoration: none;
 }
 .site-footer .social-links a {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 0.9rem;
 }
 .site-footer .btn-outline-primary {
-  border-color: #0284c7;
-  color: #0284c7;
+  border-color: #FF6F00;
+  color: #FF6F00;
+}
+.site-footer .btn-outline-primary:hover,
+.site-footer .btn-outline-primary:focus {
+  background-color: #FF6F00;
+  color: #fff;
+  border-color: #FF6F00;
+}
+.site-footer .btn-outline-primary {
+  border-color: #FF6F00;
+  color: #FF6F00;
 }
 .site-footer .btn-outline-primary:hover {
-  background-color: #0284c7;
+  background-color: #FF6F00;
   color: #fff;
 }
 
