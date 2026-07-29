@@ -176,3 +176,48 @@ nav {
 .hubungi-btn {
   color: #ffffff !important;
 }
+
+.product-filter-wrap {
+  display: inline-flex;
+  gap: 0.25rem;
+  align-items: center;
+  background: #FF6F00;
+  padding: 0.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+.product-filter-btn {
+  border: 0;
+  background: transparent;
+  color: #ffffff;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.product-filter-btn:hover {
+  color: #ffffff;
+}
+
+.product-filter-btn.active {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+@media (min-width: 768px) {
+  .product-filter-wrap {
+    width: auto;
+  }
+
+  .product-filter-btn {
+    padding: 0.35rem 0.7rem;
+    font-size: 0.8rem;
+  }
+}
