@@ -55,7 +55,7 @@ nav {
 .home-hero {
   width: 100%;
   min-height: 100vh;
-  background-image: url("tokok.jpg");
+  background-image: url("dump/tokok.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -209,6 +209,21 @@ nav {
 .produk-card .btn {
   border-radius: 30px;
   padding: 8px 20px;
+}
+
+.product-preview-btn {
+  min-width: 108px;
+}
+
+.product-preview-modal {
+  border: none;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.preview-modal-image {
+  object-fit: cover;
+  min-height: 260px;
 }
 
 .product-filter-wrap {
