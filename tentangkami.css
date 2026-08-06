@@ -1,0 +1,32 @@
+.client{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+}
+.frame1{
+    width: 50%;
+}
+.frame2{
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.frame2 img{
+    width: 500px;
+    border-radius: 20px;
+}
+.visi{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.frame3{
+    width: 50%;
+}
+.frame4{
+    width: 50%;
+}
