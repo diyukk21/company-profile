@@ -72,21 +72,21 @@
           </button>
 
           <div class="collapse navbar-collapse" id="mainNavbar">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+<ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
               <li class="nav-item">
-                <a class="nav-link active" href="#">Beranda</a>
+                <a class="nav-link active" href="#home">Beranda</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Tentang Kami</a>
+                <a class="nav-link" href="#produk">Tentang Kami</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#produk">Produk</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">E-Commerce</a>
+                <a class="nav-link" href="https://shopee.co.id/edsigndigitalprint" target="_blank" rel="noopener">E-Commerce</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Hubungi Kami</a>
+                <a class="nav-link" href="https://wa.me/6281316165756" target="_blank" rel="noopener">Hubungi Kami</a>
               </li>
             </ul>
           </div>
@@ -133,18 +133,18 @@
               PRECISION IN EVERY PRINT
             </p>
             <div class="hero-copy text-white">
-              <h1 class="display-4 display-md-3 fw-bold mb-2">
+<h1 class="display-4 fw-bold mb-2">
                 Solusi Cetak Digital
               </h1>
               <h2 class="display-6 fw-bold mb-2">
                 <span class="highlight">Berkualitas & Cepat</span>
               </h2>
-              <p class="lead fw-medium fs-5 fs-md-1 mb-4">
+              <p class="lead fw-medium fs-5 mb-4">
                 Ed'Sign hadir sebagai mitra percetakan yang dapat diandalkan
                 untuk kebutuhan pribadi maupun bisnis anda.
               </p>
               <div class="d-flex gap-2 flex-wrap flex-column flex-md-row">
-                <a href="#" class="btn btn-warning btn-lg no-radius hubungi-btn"
+                <a href="https://wa.me/6281316165756" target="_blank" rel="noopener" class="btn btn-warning btn-lg no-radius hubungi-btn"
                   >HUBUNGI KAMI</a
                 >
                 <a href="#produk" class="btn btn-outline-light btn-lg no-radius"
@@ -286,7 +286,7 @@
 
           <div class="col-lg-3 col-md-6 product-item" data-category="outdoor">
             <div class="card produk-card h-100">
-              <img src="dump/Frame 37.png" class="card-img-top" alt="X-Banner" />
+<img src="dump/frame-37.png" class="card-img-top" alt="X-Banner" />
               <div class="card-body text-center">
                 <h5 class="card-title">X-Banner</h5>
                 <p class="card-text">Cocok untuk promosi.</p>
@@ -298,7 +298,7 @@
                   data-title="X-Banner"
                   data-description="X-banner praktis untuk display promosi di booth, toko, atau acara."
                   data-details="Portabel • Mudah dipasang • Cocok untuk event dan pameran"
-                  data-image="dump/Frame 37.png"
+data-image="dump/frame-37.png"
                 >
                   Lihat
                 </button>
@@ -445,19 +445,19 @@
 
           <div class="col-12 col-md-6 col-lg-3">
             <h4>Layanan</h4>
-            <ul class="list-unstyled small mb-0">
+<ul class="list-unstyled small mb-0">
               <li>
-                <a class="text-muted text-decoration-none" href="#"
+                <a class="text-muted text-decoration-none" href="#produk"
                   >Katalog Produk</a
                 >
               </li>
               <li>
-                <a class="text-muted text-decoration-none" href="#"
+                <a class="text-muted text-decoration-none" href="#produk"
                   >Klien Kami</a
                 >
               </li>
               <li>
-                <a class="text-muted text-decoration-none" href="#"
+                <a class="text-muted text-decoration-none" href="https://wa.me/6281316165756" target="_blank" rel="noopener"
                   >Pesan Sekarang</a
                 >
               </li>
@@ -466,18 +466,18 @@
 
           <div class="col-12 col-md-6 col-lg-3">
             <h4>Perusahaan</h4>
-            <ul class="list-unstyled small mb-0">
+<ul class="list-unstyled small mb-0">
               <li>
-                <a class="text-muted text-decoration-none" href="#">Beranda</a>
+                <a class="text-muted text-decoration-none" href="#home">Beranda</a>
               </li>
               <li>
-                <a class="text-muted text-decoration-none" href="#">Katalog</a>
+                <a class="text-muted text-decoration-none" href="#produk">Katalog</a>
               </li>
               <li>
-                <a class="text-muted text-decoration-none" href="#">Mitra</a>
+                <a class="text-muted text-decoration-none" href="#produk">Mitra</a>
               </li>
               <li>
-                <a class="text-muted text-decoration-none" href="#">Kontak</a>
+                <a class="text-muted text-decoration-none" href="https://wa.me/6281316165756" target="_blank" rel="noopener">Kontak</a>
               </li>
             </ul>
           </div>
@@ -498,8 +498,8 @@
 
         <div class="row mt-4 pt-3 border-top">
           <div class="col-md-6">
-            <p class="mb-0 small">
-              &copy; 2026 Ed'Sign Digital Print. Semua hak cipta dilindungi.
+<p class="mb-0 small">
+              &copy; <span id="footerYear"></span> Ed'Sign Digital Print. Semua hak cipta dilindungi.
             </p>
           </div>
           <div class="col-md-6 text-md-end">
@@ -508,26 +508,10 @@
         </div>
       </div>
     </footer>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const modalTitle = document.getElementById("modalProductTitle");
-        const modalDescription = document.getElementById("modalProductDescription");
-        const modalDetails = document.getElementById("modalProductDetails");
-        const modalImage = document.getElementById("modalProductImage");
-
-        document.querySelectorAll(".product-preview-btn").forEach((button) => {
-          button.addEventListener("click", () => {
-            modalTitle.textContent = button.dataset.title || "Produk";
-            modalDescription.textContent =
-              button.dataset.description || "Detail produk tersedia sesuai kebutuhan.";
-            modalDetails.innerHTML =
-              button.dataset.details?.replace(/\s*\•\s*/g, "<br>• ") || "";
-            modalImage.src = button.dataset.image || "";
-            modalImage.alt = button.dataset.title || "Preview produk";
-          });
-        });
-      });
+      // Isi tahun footer otomatis
+      document.getElementById("footerYear").textContent = new Date().getFullYear();
 
       function filterProducts(category) {
         const categoryMap = {
@@ -560,7 +544,27 @@
       }
 
       document.addEventListener("DOMContentLoaded", function () {
-        filterProducts("all");
+        const modalTitle = document.getElementById("modalProductTitle");
+        const modalDescription = document.getElementById("modalProductDescription");
+        const modalDetails = document.getElementById("modalProductDetails");
+        const modalImage = document.getElementById("modalProductImage");
+
+        document.querySelectorAll(".product-preview-btn").forEach((button) => {
+          button.addEventListener("click", () => {
+            modalTitle.textContent = button.dataset.title || "Produk";
+            modalDescription.textContent =
+              button.dataset.description || "Detail produk tersedia sesuai kebutuhan.";
+            modalDetails.innerHTML =
+              button.dataset.details?.replace(/\s*\•\s*/g, "<br>• ") || "";
+            modalImage.src = button.dataset.image || "";
+            modalImage.alt = button.dataset.title || "Preview produk";
+          });
+        });
+
+        // Inisialisasi filter & posisi slider setelah semua aset dimuat
+        const initFilter = () => filterProducts("all");
+        initFilter();
+        window.addEventListener("load", initFilter);
         window.addEventListener("resize", () => {
           const activeButton = document.querySelector(
             ".product-filter-btn.active"
