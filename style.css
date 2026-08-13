@@ -345,7 +345,7 @@ body {
   font-weight: bold;
 }
 .materi h2{
-  font-size: 48px;
+  font-size:    48px;
 }
 .lol{
   background-color: #f7f9fc;
@@ -504,4 +504,42 @@ body {
   font-weight: 600;
   color: #c55c00;
   font-size: 20px;
+}
+.section-title{
+  letter-spacing: -1px;
+  line-height: 1.5;
+}
+.pelanggan h2{
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+.testi{
+  margin: 0;
+  font-weight: 700;
+  color: #c55c00;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.pelanggan{
+  background-color: #f7f9fc;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+}
+.apa{
+  display: flex;
+  flex-direction: column;
+}
+.kata{
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 15px;
+  border-left:2px solid #c55c00 ;
+}
+.hasil{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
 }

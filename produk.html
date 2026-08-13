@@ -168,77 +168,88 @@
     >
       <div class="container">
 
-        <div
-          class="justify-content-between d-flex align-items-center py-3"
-        >
+        <div class="catalog-header py-3">
 
-          <h2 class="text-center fs-4">
-            Katalog Lengkap
-          </h2>
+  <h2 class="text-center fs-4 mb-0">
+    Katalog Lengkap
+  </h2>
 
+  <div class="catalog-actions">
 
-          <!-- PRODUCT FILTER -->
-          <div
-            class="product-filter-wrap"
-            id="productFilterWrap"
-          >
+    <!-- PRODUCT SEARCH -->
+    <div class="product-search-wrap">
+      <div class="input-group">
+        <span class="input-group-text bg-white">
+          <i class="bi bi-search" aria-hidden="true"></i>
+        </span>
 
-            <div
-              class="product-filter-slider"
-              id="productFilterSlider"
-            ></div>
+        <input
+          type="search"
+          id="productSearch"
+          class="form-control"
+          placeholder="Cari produk..."
+          aria-label="Cari produk"
+          autocomplete="off"
+        />
+      </div>
+    </div>
 
+    <!-- PRODUCT FILTER -->
+    <div
+      class="product-filter-wrap"
+      id="productFilterWrap"
+    >
 
-            <!-- SEMUA -->
-            <button
-              type="button"
-              id="tab-all"
-              class="product-filter-btn active"
-              data-filter="all"
-              aria-pressed="true"
-            >
-              Semua
-            </button>
+      <div
+        class="product-filter-slider"
+        id="productFilterSlider"
+      ></div>
 
+      <button
+        type="button"
+        id="tab-all"
+        class="product-filter-btn active"
+        data-filter="all"
+        aria-pressed="true"
+      >
+        Semua
+      </button>
 
-            <!-- INDOOR -->
-            <button
-              type="button"
-              id="tab-display"
-              class="product-filter-btn"
-              data-filter="indoor"
-              aria-pressed="false"
-            >
-              Indoor
-            </button>
+      <button
+        type="button"
+        id="tab-display"
+        class="product-filter-btn"
+        data-filter="indoor"
+        aria-pressed="false"
+      >
+        Indoor
+      </button>
 
+      <button
+        type="button"
+        id="tab-merch"
+        class="product-filter-btn"
+        data-filter="outdoor"
+        aria-pressed="false"
+      >
+        Outdoor
+      </button>
 
-            <!-- OUTDOOR -->
-            <button
-              type="button"
-              id="tab-merch"
-              class="product-filter-btn"
-              data-filter="outdoor"
-              aria-pressed="false"
-            >
-              Outdoor
-            </button>
+      <button
+        type="button"
+        id="tab-stationery"
+        class="product-filter-btn"
+        data-filter="merchandise"
+        aria-pressed="false"
+      >
+        Merchandise
+      </button>
 
+    </div>
 
-            <!-- MERCHANDISE -->
-            <button
-              type="button"
-              id="tab-stationery"
-              class="product-filter-btn"
-              data-filter="merchandise"
-              aria-pressed="false"
-            >
-              Merchandise
-            </button>
+  </div>
 
-          </div>
-
-        </div>
+</div>
 
 
         <!-- PRODUCT GRID -->

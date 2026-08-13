@@ -173,3 +173,95 @@ document.addEventListener("DOMContentLoaded", () => {
     moveFilterSlider(currentActiveButton);
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const searchInput = document.getElementById("productSearch");
+  const productItems = document.querySelectorAll(".product-item");
+  const filterButtons = document.querySelectorAll(".product-filter-btn");
+
+  let activeCategory = "all";
+
+  function filterProducts() {
+
+    const keyword = searchInput
+      ? searchInput.value.trim().toLowerCase()
+      : "";
+
+    productItems.forEach((product) => {
+
+      const title =
+        product.querySelector(".card-title")?.textContent
+          .trim()
+          .toLowerCase() || "";
+
+      const description =
+        product.querySelector(".card-text")?.textContent
+          .trim()
+          .toLowerCase() || "";
+
+      const category =
+        product.dataset.category?.trim().toLowerCase() || "";
+
+      // Cek kategori
+      const categoryMatch =
+        activeCategory === "all" ||
+        category === activeCategory;
+
+      // Cek search
+      const searchMatch =
+        keyword === "" ||
+        title.includes(keyword) ||
+        description.includes(keyword);
+
+      // Tampilkan jika keduanya cocok
+      product.style.display =
+        categoryMatch && searchMatch
+          ? ""
+          : "none";
+    });
+  }
+
+  // =========================
+  // SEARCH PRODUK
+  // =========================
+
+  if (searchInput) {
+
+    searchInput.addEventListener("input", () => {
+      filterProducts();
+    });
+
+  }
+
+
+  // =========================
+  // FILTER KATEGORI
+  // =========================
+
+  filterButtons.forEach((button) => {
+
+    button.addEventListener("click", () => {
+
+      activeCategory = button.dataset.filter;
+
+      // Update status tombol
+      filterButtons.forEach((btn) => {
+        btn.classList.remove("active");
+        btn.setAttribute("aria-pressed", "false");
+      });
+
+      button.classList.add("active");
+      button.setAttribute("aria-pressed", "true");
+
+      filterProducts();
+
+    });
+
+  });
+
+
+  // Jalankan pertama kali
+  filterProducts();
+
+});
