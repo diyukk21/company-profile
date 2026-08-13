@@ -1,153 +1,280 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
+<!doctype html>
+<html lang="id">
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Company Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">  
+    <meta name="description" content="Profil CV. Edsign Delta Imaji." />
+    <title>Tentang Kami | Ed'Sign Digital Print</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"/>
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    rel="stylesheet"
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-icons/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="tentangkami.css">
-    </head>
-<body>
-    <section
-      id="top-section"
-      style="
-        font-size: 14px;
-        border-bottom: 2px solid #ff6f00;
-        background-color: #0b2c49;
-        font-family: &quot;Roboto&quot;, sans-serif;
-      "
-    >
-      <div id="qodef-top-area">
-        <div class="mt-1 px-5">
-          <!-- Tambahkan 'justify-content-end' di sini -->
-          <div
-            class="social-links mt-1 d-flex align-items-center justify-content-end gap-2"
-          >
-            <span class="text-white me-2 fs-5 d-none d-sm-inline"
-              >Follow us:</span
-            >
-            <a
-              href="https://www.instagram.com/edsignprint"
-              target="_blank"
-              title="Instagram"
-              class="text-white me-2 text-decoration-none"
-            >
-              <i class="bi bi-instagram fs-4"></i>
-            </a>
-            <a
-              href="https://www.tiktok.com/@edsignprint"
-              target="_blank"
-              title="TikTok"
-              class="text-white text-decoration-none"
-            >
-              <i class="bi bi-tiktok fs-4"></i>
-            </a>
-          </div>
+    <link rel="stylesheet" href="tentangkami.css" />
+  </head>
+  <body>
+    <section class="top-bar" aria-label="Media sosial">
+      <div class="container">
+        <div class="d-flex justify-content-end align-items-center gap-3">
+          <span class="d-none d-sm-inline">Follow us:</span
+          ><a
+            href="https://www.instagram.com/edsignprint"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram Ed'Sign"
+            ><i class="bi bi-instagram" aria-hidden="true"></i></a
+          ><a
+            href="https://www.tiktok.com/@edsignprint"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="TikTok Ed'Sign"
+            ><i class="bi bi-tiktok" aria-hidden="true"></i
+          ></a>
         </div>
       </div>
     </section>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-white py-2">
-        <div class="container-fluid px-5">
-          <a class="navbar-brand d-flex align-items-center" href="#">
-            <img src="dump/logoo.png" alt="Logo EdSign" width="120" />
-          </a>
-          <button
+      <nav class="navbar navbar-expand-lg bg-white py-2" data-sticky-nav>
+        <div class="container">
+          <a
+            class="navbar-brand d-flex align-items-center"
+            href="index.html"
+            aria-label="Beranda Ed'Sign"
+            ><img
+              src="dump/logoo.png"
+              alt="Ed'Sign Digital Print"
+              width="120"
+              height="48" /></a
+          ><button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#mainNavbar"
             aria-controls="mainNavbar"
             aria-expanded="false"
-            aria-label="Toggle navigation"
+            aria-label="Buka navigasi"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse" id="mainNavbar">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Beranda</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Tentang Kami</a>
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="tentang.html"
+                  >Tentang Kami</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="produk.html">Produk</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://shopee.co.id/edsigndigitalprint" target="_blank" rel="noopener">E-Commerce</a>
+                <a
+                  class="nav-link"
+                  href="https://shopee.co.id/edsigndigitalprint"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >E-Commerce</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://wa.me/6281316165756" target="_blank" rel="noopener">Hubungi Kami</a>
+                <a
+                  class="nav-link"
+                  href="https://wa.me/6281316165756"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Hubungi Kami</a
+                >
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-     <section class="client container py-5">
-        <div class="frame1">
-            <h2>Tentang Kami</h2>
-            <p>CV. Edsign Delta Imaji adalah perusahaan yang fokus dalam bidang multimedia,
-                 design and printing, dan interior baik perseorangan maupun perusahaan.</p>
-            <p>Sejak tahun 2017 CV. Edsign Delta Imaji didirikan dan sampai saat ini telah banyak perusahaan 
-                yang telah menggunakan jasa kami dibidang multimedia, design and printing, dan interior.</p>    
-            <p>Dengan sumber daya manusia yang profesional dalam bidangnya dan didukung dengan perangkat sistem teknologi yang berkualitas 
-                dan canggih.Kami dapat memberikan pelayanan prima dan kualitas hasil yang memuaskan untuk para klien kami.</p>
+    <main>
+      <section class="container py-5">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-lg-6">
+            <h1>Tentang Kami</h1>
+            <p>
+              CV. Edsign Delta Imaji adalah perusahaan yang fokus dalam bidang
+              multimedia, desain dan percetakan, serta interior untuk
+              perseorangan maupun perusahaan.
+            </p>
+            <p>
+              Sejak didirikan pada tahun 2017, banyak perusahaan telah
+              menggunakan jasa kami di bidang multimedia, desain dan percetakan,
+              serta interior.
+            </p>
+            <p>
+              Dengan sumber daya manusia profesional dan teknologi berkualitas,
+              kami memberikan pelayanan prima serta hasil yang memuaskan untuk
+              para klien.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <img
+              class="about-intro__image"
+              src="dump/tokok.jpg"
+              alt="Toko Ed'Sign Digital Print"
+            />
+          </div>
         </div>
-        <div class="frame2">
-            <img src="dump/tokok.jpg" alt="TOKO EDSIGN">
+      </section>
+      <section class="container pb-5">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <article class="about-card">
+              <h2 class="h3">Visi Utama</h2>
+              <p class="mb-0">
+                Menjadi kiblat dan mitra solusi percetakan digital serta
+                merchandise terdepan di Indonesia yang tersohor atas presisi
+                akurasi warna, inovasi material ramah lingkungan, dan
+                reliabilitas pelayanan.
+              </p>
+            </article>
+          </div>
+          <div class="col-md-6">
+            <article class="about-card">
+              <h2 class="h3">Misi Strategis</h2>
+              <p class="mb-0">
+                Mendedikasikan ide dan kinerja permesinan otomatis mutakhir,
+                mendesain material printing dan souvenir korporasi premium,
+                serta melatih talenta kreatif terampil.
+              </p>
+            </article>
+          </div>
         </div>
-    </section>
-     <section class="visi container py-5">
-            <div class="frame3 container py-3">
-                <h2>VISI Utama</h2>
-                <p>Menjadi kiblat dan mitra solusi percetakan digital serta merchandise 
-                    terdepan di Indonesia yang tersohor atas presisi akurasi warna,
-                    inovasi material ramah lingkungan, dan reliabilitas pelayanan.</p>
-            </div>
-            <div class="frame4 container py-3">
-                <h2>MISI Strategis</h2>
-                <p>Mendedikasikan ide dan kinerja permesinan otomatis mutakhir berkecepatan tinggi, 
-                    mendesain aneka jenis material printing dan souvenir korporasi
-                    premium guna mendongkrak brand awareness mitra, serta melatih
-                    talenta kreatif terampil.
+      </section>
+
+      <section class="container py-5">
+    <h2>Nilai-Nilai Utama</h2>
+    <p>PRINSIP KERJA KAMI</p>
+
+    <div class="row g-4">
+
+        <div class="col-md-4 d-flex">
+            <div class="frame1 w-100">
+                <i class="fa-solid fa-compass-drafting fs-3"></i>
+                <p class="fs-5 fw-bold mb-0">Presisi Detail</p>
+                <p>
+                    Setiap cetakan melewati kalibrasi digital intensif guna
+                    mengunci keakuratan warna cetak CMYK hingga mendekati 99%.
                 </p>
             </div>
-        </section>
+        </div>
 
+        <div class="col-md-4 d-flex">
+            <div class="frame1 w-100">
+                <i class="fa-solid fa-wand-magic-sparkles fs-3"></i>
+                <p class="fs-5 fw-bold mb-0">Inovasi Produk</p>
+                <p>
+                    Mengeksplorasi beraneka tekstur kertas istimewa dan teknik eksklusif seperti Spot UV, foil metallic, dan embossing.
+                </p>
+            </div>
+        </div>
 
+        <div class="col-md-4 d-flex">
+            <div class="frame1 w-100">
+                <i class="fa-solid fa-truck-fast fs-3"></i>
+                <p class="fs-5 fw-bold mb-0">Kecepatan Maksimal</p>
+                <p>
+                    Menghargai waktu berharga bisnis Anda dengan jaminan ketepatan pengerjaan serta pengemasan ekspres yang aman.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
 
+    <section class="container py-5">
+      <div class="slide h-100 w-100 ">
+        <div class="row g-4 align-items-center h-100">
+          <div class="col-12 col-md-6">
+            <div class="mb-4">
+              <h3 class="slide-title fw-bold mb-2">
+                Percetakan Digital Presisi
+              </h3>
 
+              <p class="slide-subtitle text-uppercase mb-0">
+                Layanan Utama Kategori Cetak
+              </p>
+            </div>
 
+            <ul class="service-list list-unstyled mb-0">
+              <li class="service-item">
+                <span class="service-icon">
+                  <i class="bi bi-check-lg"></i>
+                </span>
 
+                <p>
+                  <strong>Publikasi Profesional:</strong>
+                  Cetak buku premium, katalog produk bertekstur,
+                  dokumen bisnis, laporan tahunan (annual reports).
+                </p>
+              </li>
 
+              <li class="service-item">
+                <span class="service-icon">
+                  <i class="bi bi-check-lg"></i>
+                </span>
 
+                <p>
+                  <strong>Promosi Kreatif:</strong>
+                  Pembuatan brosur eksklusif, flyer, poster high-res,
+                  dan kalender dinding/meja tahunan kustom.
+                </p>
+              </li>
 
+              <li class="service-item">
+                <span class="service-icon">
+                  <i class="bi bi-check-lg"></i>
+                </span>
 
+                <p>
+                  <strong>Cetak Format Lebar:</strong>
+                  Banner spanduk tajam, roll-up banner pameran,
+                  stiker vinil decal, display outdoor/indoor.
+                </p>
+              </li>
+            </ul>
+          </div>
 
+          <div class="col-12 col-md-6">
+            <div class="slide-image-wrapper">
+              <img
+                src="dump/Frame 860.png"
+                alt="Beautiful bright neon color print rollers close up representing accuracy"
+                class="slide-image"
+              />
 
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-
-
-
-
-
-
-
+    </main>
     <footer class="site-footer bg-white text-dark">
       <div class="container py-5">
         <div class="row g-4">
           <div class="col-12 col-md-6 col-lg-3">
-            <h3 class="footer-logo">Edsign.</h3>
+            <h2 class="footer-logo h3">Edsign.</h2>
             <p class="footer-desc">
               Mitra percetakan digital yang membantu Anda mencetak kebutuhan
               promosi, branding, dan identitas bisnis dengan kualitas terbaik.
@@ -156,59 +283,74 @@
               <a
                 class="me-3 text-decoration-none text-muted"
                 href="https://wa.me/6281316165756"
-                aria-label="WhatsApp"
+                target="_blank"
+                rel="noopener noreferrer"
                 >WhatsApp</a
               >
               <a
                 class="text-decoration-none text-muted"
                 href="https://shopee.co.id/edsigndigitalprint"
-                aria-label="Shopee"
+                target="_blank"
+                rel="noopener noreferrer"
                 >Shopee</a
               >
             </div>
           </div>
-
           <div class="col-12 col-md-6 col-lg-3">
-            <h4>Layanan</h4>
+            <h2 class="h5">Layanan</h2>
             <ul class="list-unstyled small mb-0">
               <li>
-                <a class="text-muted text-decoration-none" href="#produk"
+                <a class="text-muted text-decoration-none" href="produk.html"
                   >Katalog Produk</a
                 >
               </li>
               <li>
-                <a class="text-muted text-decoration-none" href="#produk"
+                <a class="text-muted text-decoration-none" href="produk.html"
                   >Klien Kami</a
                 >
               </li>
               <li>
-                <a class="text-muted text-decoration-none" href="https://wa.me/6281316165756" target="_blank" rel="noopener"
+                <a
+                  class="text-muted text-decoration-none"
+                  href="https://wa.me/6281316165756"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   >Pesan Sekarang</a
                 >
               </li>
             </ul>
           </div>
-
           <div class="col-12 col-md-6 col-lg-3">
-            <h4>Perusahaan</h4>
+            <h2 class="h5">Perusahaan</h2>
             <ul class="list-unstyled small mb-0">
               <li>
-                <a class="text-muted text-decoration-none" href="#home">Beranda</a>
+                <a class="text-muted text-decoration-none" href="index.html"
+                  >Beranda</a
+                >
               </li>
               <li>
-                <a class="text-muted text-decoration-none" href="#produk">Katalog</a>
+                <a class="text-muted text-decoration-none" href="produk.html"
+                  >Katalog</a
+                >
               </li>
               <li>
-                <a class="text-muted text-decoration-none" href="#produk">Mitra</a>
+                <a class="text-muted text-decoration-none" href="tentang.html"
+                  >Mitra</a
+                >
               </li>
               <li>
-                <a class="text-muted text-decoration-none" href="https://wa.me/6281316165756" target="_blank" rel="noopener">Kontak</a>
+                <a
+                  class="text-muted text-decoration-none"
+                  href="https://wa.me/6281316165756"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Kontak</a
+                >
               </li>
             </ul>
           </div>
-
           <div class="col-12 col-md-6 col-lg-3">
-            <h4>Hubungi Kami</h4>
+            <h2 class="h5">Hubungi Kami</h2>
             <p class="small text-muted">
               Butuh konsultasi cepat untuk kebutuhan cetak Anda? Langsung
               hubungi tim kami melalui WhatsApp.
@@ -216,15 +358,17 @@
             <a
               class="btn btn-outline-primary btn-sm"
               href="https://wa.me/6281316165756"
+              target="_blank"
+              rel="noopener noreferrer"
               >Konsultasi Sekarang</a
             >
           </div>
         </div>
-
         <div class="row mt-4 pt-3 border-top">
           <div class="col-md-6">
             <p class="mb-0 small">
-              &copy; <span id="footerYear"></span> Ed'Sign Digital Print. Semua hak cipta dilindungi.
+              &copy; <span id="footerYear"></span> Ed'Sign Digital Print. Semua
+              hak cipta dilindungi.
             </p>
           </div>
           <div class="col-md-6 text-md-end">
@@ -234,5 +378,6 @@
       </div>
     </footer>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script src="js/site.js"></script>
+  </body>
 </html>

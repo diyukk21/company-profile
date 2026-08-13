@@ -1,10 +1,11 @@
 {
   "name": "company-profile",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Company profile website for Ed'Sign Digital Print.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier --write \"*.{html,css}\" \"js/*.js\"",
+    "format:check": "prettier --check \"*.{html,css}\" \"js/*.js\"",
+    "test": "npm run format:check"
   },
   "keywords": [],
   "author": "",
