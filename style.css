@@ -2,10 +2,13 @@
   --brand-primary: #0b2c49;
   --brand-accent: #c55c00;
   --brand-accent-hover: #e17316;
+  --site-font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
+html,
 body {
   margin: 0;
+  font-family: var(--site-font);
 }
 
 .top-bar {
@@ -30,7 +33,10 @@ body {
   position: relative;
   padding-bottom: 0.25rem;
   color: #000;
+  font-size: 0.95rem;
   font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
   transition: color 0.2s ease;
 }
 
@@ -236,7 +242,7 @@ body {
   z-index: 1;
   padding: 0.25rem 0.55rem;
   border-radius: 999px;
-  background: #ff9800;
+  background: #6b7280;
   color: #fff;
   font-size: 0.65rem;
   font-weight: 700;
@@ -253,7 +259,7 @@ body {
 
 .product-card-category {
   margin-bottom: 0.35rem;
-  color: #c55c00;
+  color: #6b7280;
   font-size: 0.65rem;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -266,8 +272,8 @@ body {
   font-size: 1rem;
 }
 
-.product-card-body > p:last-child {
-  margin-bottom: 0;
+.product-card-body > p:not(.product-card-category) {
+  margin-bottom: 0.75rem;
   color: #5c6e62;
   font-size: 0.8rem;
   line-height: 1.55;

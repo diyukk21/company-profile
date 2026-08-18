@@ -1,10 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const filterButtons = document.querySelectorAll("[data-product-filter]");
+  const filterButtons = document.querySelectorAll(
+    "[data-product-filter], [data-filter]"
+  );
   const productCards = document.querySelectorAll(
-    ".product-card[data-category]"
+    ".product-card[data-category], .product-item[data-category]"
   );
   const filterWrap = document.querySelector(".product-filter-wrap");
-  const filterIndicator = document.querySelector(".product-filter-indicator");
+  const filterIndicator = document.querySelector(
+    ".product-filter-indicator, .product-filter-slider"
+  );
 
   const moveFilterIndicator = (button) => {
     if (!filterWrap || !filterIndicator || !button) return;
@@ -14,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   filterButtons.forEach((button) => {
     button.addEventListener("click", () => {
-      const selectedCategory = button.dataset.productFilter;
+      const selectedCategory = button.dataset.productFilter || button.dataset.filter;
 
       filterButtons.forEach((filterButton) => {
         const isActive = filterButton === button;
@@ -38,4 +42,3 @@ document.addEventListener("DOMContentLoaded", () => {
     moveFilterIndicator(document.querySelector(".product-filter-btn.active"));
   });
 });
-

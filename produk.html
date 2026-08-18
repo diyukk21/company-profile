@@ -1,19 +1,17 @@
-
 <!doctype html>
 <html lang="id">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <meta
-    name="description"
-    content="Layanan percetakan profesional Ed'Sign."
-  />
-
-  <title>Produk | Ed'Sign Digital Print</title>
-
-  <link
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Katalog produk Ed'Sign Digital Print." />
+    <title>Produk | Ed'Sign Digital Print</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     />
@@ -21,616 +19,527 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="produk.css" />
-</head>
-
-<body>
-
-  <!-- TOP BAR -->
-  <section class="top-bar" aria-label="Media sosial">
-    <div class="container">
-      <div class="d-flex justify-content-end align-items-center gap-3">
-
-        <span class="d-none d-sm-inline">
-          Follow us:
-        </span>
-
-        <a
-          href="https://www.instagram.com/edsignprint"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Instagram Ed'Sign"
-        >
-          <i class="bi bi-instagram" aria-hidden="true"></i>
-        </a>
-
-        <a
-          href="https://www.tiktok.com/@edsignprint"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="TikTok Ed'Sign"
-        >
-          <i class="bi bi-tiktok" aria-hidden="true"></i>
-        </a>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- NAVBAR -->
-  <header>
-    <nav
-      class="navbar navbar-expand-lg bg-white py-2"
-      data-sticky-nav
-    >
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="produk.css" />
+  </head>
+  <body>
+    <section class="top-bar" aria-label="Media sosial">
       <div class="container">
-
-        <a
-          class="navbar-brand d-flex align-items-center"
-          href="index.html"
-          aria-label="Beranda Ed'Sign"
-        >
-          <img
-            src="dump/logoo.png"
-            alt="Ed'Sign Digital Print"
-            width="120"
-            height="48"
-          />
-        </a>
-
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mainNavbar"
-          aria-controls="mainNavbar"
-          aria-expanded="false"
-          aria-label="Buka navigasi"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div
-          class="collapse navbar-collapse"
-          id="mainNavbar"
-        >
-          <ul
-            class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center"
-          >
-
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="index.html"
-              >
-                Beranda
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="tentang.html"
-              >
-                Tentang Kami
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="produk.html"
-              >
-                Produk
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://shopee.co.id/edsigndigitalprint"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                E-Commerce
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://wa.me/6281316165756"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Hubungi Kami
-              </a>
-            </li>
-
-          </ul>
-        </div>
-
-      </div>
-    </nav>
-  </header>
-
-
-  <main>
-    <!-- PRODUCT SECTION -->
-    <section
-      id="produk"
-      class="py-5"
-    >
-      <div class="container">
-
-        <div class="catalog-header py-3">
-
-  <h2 class="text-center fs-4 mb-0">
-    Katalog Lengkap
-  </h2>
-
-  <div class="catalog-actions">
-
-    <!-- PRODUCT SEARCH -->
-    <div class="product-search-wrap">
-      <div class="input-group">
-        <span class="input-group-text bg-white">
-          <i class="bi bi-search" aria-hidden="true"></i>
-        </span>
-
-        <input
-          type="search"
-          id="productSearch"
-          class="form-control"
-          placeholder="Cari produk..."
-          aria-label="Cari produk"
-          autocomplete="off"
-        />
-      </div>
-    </div>
-
-    <!-- PRODUCT FILTER -->
-    <div
-      class="product-filter-wrap"
-      id="productFilterWrap"
-    >
-
-      <div
-        class="product-filter-slider"
-        id="productFilterSlider"
-      ></div>
-
-      <button
-        type="button"
-        id="tab-all"
-        class="product-filter-btn active"
-        data-filter="all"
-        aria-pressed="true"
-      >
-        Semua
-      </button>
-
-      <button
-        type="button"
-        id="tab-display"
-        class="product-filter-btn"
-        data-filter="indoor"
-        aria-pressed="false"
-      >
-        Indoor
-      </button>
-
-      <button
-        type="button"
-        id="tab-merch"
-        class="product-filter-btn"
-        data-filter="outdoor"
-        aria-pressed="false"
-      >
-        Outdoor
-      </button>
-
-      <button
-        type="button"
-        id="tab-stationery"
-        class="product-filter-btn"
-        data-filter="merchandise"
-        aria-pressed="false"
-      >
-        Merchandise
-      </button>
-
-    </div>
-
-  </div>
-
-</div>
-
-
-        <!-- PRODUCT GRID -->
-        <div class="row g-4 mb-4">
-
-
-          <!-- TUMBLER -->
-          <div
-            class="col-lg-3 col-md-6 product-item"
-            data-category="outdoor"
-          >
-
-            <div class="card produk-card h-100">
-
-              <span class="product-category-badge badge-outdoor">
-             OUTDOOR
-              </span>
-
-              <img
-                src="dump/tumbler.png"
-                class="card-img-top"
-                alt="Banner"
-              />
-
-              <div class="card-body text-center">
-
-                <h5 class="card-title">
-                  Tumbler custom
-                </h5>
-
-                <p class="card-text">
-                  cetak tumbler custom.
-                </p>
-
-                <button
-                  type="button"
-                  class="btn btn-primary product-preview-btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#productPreviewModal"
-                  data-title="Tumbler"
-                  data-description="Koleksi tumbler termos pintar kustom yang dirancang dengan material berkualitas tinggi. Menjaga suhu air panas atau dingin hingga 12 jam dengan struktur dinding
-                                    ganda vakum stainless steel Food Grade SUS304"
-                  data-details="Material waterproof • Finishing tajam • Cocok untuk indoor & outdoor"
-                  data-image="dump/tumbler.png"
-                >
-                  Lihat
-                </button>
-
-              </div>
-            </div>
-          </div>
-
-
-          <!-- SPANDUK -->
-          <div
-            class="col-lg-3 col-md-6 product-item"
-            data-category="outdoor"
-          >
-
-            <div class="card produk-card h-100">
-
-
-              <span class="product-category-badge badge-outdoor">
-               OUTDOOR
-              </span>
-
-              <img
-                src="dump/kalender.png"
-                class="card-img-top"
-                alt="Spanduk"
-              />
-
-              <div class="card-body text-center">
-
-                <h5 class="card-title">
-                  Spanduk
-                </h5>
-
-                <p class="card-text">
-                  Spanduk berbagai ukuran.
-                </p>
-
-                <button
-                  type="button"
-                  class="btn btn-primary product-preview-btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#productPreviewModal"
-                  data-title="Spanduk"
-                  data-description="Spanduk custom dengan warna tajam dan hasil cetak presisi."
-                  data-details="Ukuran custom • Bisa dipasang di acara dan jalanan • Cetak full color"
-                  data-image="dump/kalender.png"
-                >
-                  Lihat
-                </button>
-
-              </div>
-            </div>
-          </div>
-
-
-          <!-- STICKER -->
-          <div
-            class="col-lg-3 col-md-6 product-item"
-            data-category="indoor"
-          >
-
-            <div class="card produk-card h-100">
-
-              <span class="product-category-badge badge-indoor">
-           INDOOR
-          </span>
-
-              <img
-                src="dump/stiker.jpg"
-                class="card-img-top"
-                alt="Sticker"
-              />
-
-              <div class="card-body text-center">
-
-                <h5 class="card-title">
-                  Sticker
-                </h5>
-
-                <p class="card-text">
-                  Sticker vinyl &amp; cutting.
-                </p>
-
-                <button
-                  type="button"
-                  class="btn btn-primary product-preview-btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#productPreviewModal"
-                  data-title="Sticker"
-                  data-description="Sticker vinyl dan cutting untuk kebutuhan branding dan promosi."
-                  data-details="Tahan air • Bisa dipasang di kaca, motor, dan box • Pilihan glossy atau matte"
-                  data-image="dump/stiker.jpg"
-                >
-                  Lihat
-                </button>
-
-              </div>
-            </div>
-          </div>
-
-
-          <!-- KALENDER -->
-          <div
-            class="col-lg-3 col-md-6 product-item"
-            data-category="indoor"
-          >
-
-            <div class="card produk-card h-100">
-
-              <span class="product-category-badge badge-indoor">
-              INDOOR
-              </span>
-
-              <img
-                src="dump/kalender.png"
-                class="card-img-top"
-                alt="Poster"
-              />
-
-              <div class="card-body text-center">
-
-                <h5 class="card-title">
-                  Kalender custom
-                </h5>
-
-                <p class="card-text">
-                  Cetak kalender sesuai keinginan.
-                </p>
-
-                <button
-                  type="button"
-                  class="btn btn-primary product-preview-btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#productPreviewModal"
-                  data-title="Kalender Custom"
-                  data-description="Kalender custom yang cocok untuk hadiah perusahaan, promosi, dan branding."
-                  data-details="Bisa custom desain • Pilihan ukuran lengkap • Cetak berkualitas tinggi"
-                  data-image="dump/kalender.png"
-                >
-                  Lihat
-                </button>
-
-              </div>
-            </div>
-          </div>
-
-
-          <!-- X-BANNER -->
-          <div
-            class="col-lg-3 col-md-6 product-item"
-            data-category="outdoor"
-          >
-
-            <div class="card produk-card h-100">
-
-              <span class="product-category-badge badge-outdoor">
-               OUTDOOR
-              </span>
-
-              <img
-                src="dump/frame-37.png"
-                class="card-img-top"
-                alt="X-Banner"
-              />
-
-              <div class="card-body text-center">
-
-                <h5 class="card-title">
-                  X-Banner
-                </h5>
-
-                <p class="card-text">
-                  Cocok untuk promosi.
-                </p>
-
-                <button
-                  type="button"
-                  class="btn btn-primary product-preview-btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#productPreviewModal"
-                  data-title="X-Banner"
-                  data-description="X-banner praktis untuk display promosi di booth, toko, atau acara."
-                  data-details="Portabel • Mudah dipasang • Cocok untuk event dan pameran"
-                  data-image="dump/frame-37.png"
-                >
-                  Lihat
-                </button>
-
-              </div>
-            </div>
-          </div>
-
-
-          <!-- KARTU NAMA -->
-          <div
-            class="col-lg-3 col-md-6 product-item"
-            data-category="indoor"
-          >
-
-            <div class="card produk-card h-100">
-
-              <span class="product-category-badge badge-indoor">
-           INDOOR
-          </span>
-
-              <img
-                src="dump/kalender.png"
-                class="card-img-top"
-                alt="Kartu Nama"
-              />
-
-              <div class="card-body text-center">
-
-                <h5 class="card-title">
-                  Kartu Nama
-                </h5>
-
-                <p class="card-text">
-                  Desain elegan &amp; premium.
-                </p>
-
-                <button
-                  type="button"
-                  class="btn btn-primary product-preview-btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#productPreviewModal"
-                  data-title="Kartu Nama"
-                  data-description="Kartu nama premium yang menampilkan identitas bisnis Anda dengan elegan."
-                  data-details="Finishing premium • Kertas pilihan • Desain custom sesuai brand"
-                  data-image="dump/kalender.png"
-                >
-                  Lihat
-                </button>
-
-              </div>
-            </div>
-          </div>
-
-
-          <!-- BROSUR -->
-          <div
-            class="col-lg-3 col-md-6 product-item"
-            data-category="indoor"
-          >
-
-            <div class="card produk-card h-100">
-
-              <span class="product-category-badge badge-indoor">
-           INDOOR
-          </span>
-
-              <img
-                src="dump/kalender.png"
-                class="card-img-top"
-                alt="Brosur"
-              />
-
-              <div class="card-body text-center">
-
-                <h5 class="card-title">
-                  Brosur
-                </h5>
-
-                <p class="card-text">
-                  Cetak brosur full color.
-                </p>
-
-                <button
-                  type="button"
-                  class="btn btn-primary product-preview-btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#productPreviewModal"
-                  data-title="Brosur"
-                  data-description="Brosur full color untuk promosi produk, layanan, dan acara."
-                  data-details="Cetak full color • Kertas tebal • Bisa custom ukuran dan isi"
-                  data-image="dump/kalender.png"
-                >
-                  Lihat
-                </button>
-
-              </div>
-            </div>
-          </div>
-
-
-          <!-- MERCHANDISE -->
-          <div
-            class="col-lg-3 col-md-6 product-item"
-            data-category="merchandise"
-          >
-
-            <div class="card produk-card h-100">
-
-              <span class="product-category-badge badge-merchandise">
-               MERCHANDISE
-              </span>
-
-              <img
-                src="dump/kalender.png"
-                class="card-img-top"
-                alt="Merchandise"
-              />
-
-              <div class="card-body text-center">
-
-                <h5 class="card-title">
-                  Merchandise
-                </h5>
-
-                <p class="card-text">
-                  Custom merchandise berkualitas.
-                </p>
-
-                <button
-                  type="button"
-                  class="btn btn-primary product-preview-btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#productPreviewModal"
-                  data-title="Merchandise"
-                  data-description="Merchandise custom untuk acara, promosi, dan hadiah branding."
-                  data-details="Custom logo • Cocok untuk promosi • Banyak pilihan produk"
-                  data-image="dump/kalender.png"
-                >
-                  Lihat
-                </button>
-
-              </div>
-            </div>
-          </div>
-
+        <div class="d-flex justify-content-end align-items-center gap-3">
+          <span class="d-none d-sm-inline">Follow us:</span
+          ><a
+            href="https://www.instagram.com/edsignprint"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram Ed'Sign"
+            ><i class="bi bi-instagram"></i></a
+          ><a
+            href="https://www.tiktok.com/@edsignprint"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="TikTok Ed'Sign"
+            ><i class="bi bi-tiktok"></i
+          ></a>
         </div>
       </div>
     </section>
-
-
-    <!-- PRODUCT PREVIEW MODAL -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-white py-2" data-sticky-nav>
+        <div class="container">
+          <a
+            class="navbar-brand d-flex align-items-center"
+            href="index.html"
+            aria-label="Beranda Ed'Sign"
+            ><img
+              src="dump/logoo.png"
+              alt="Ed'Sign Digital Print"
+              width="120"
+              height="48" /></a
+          ><button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Buka navigasi"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tentang.html">Tentang Kami</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="produk.html"
+                  >Produk</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://shopee.co.id/edsigndigitalprint"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >E-Commerce</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hubungi.html">Hubungi Kami</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="produk" class="py-5">
+        <div class="container">
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-4"
+          >
+            <h1 class="h3 mb-0">Katalog Produk</h1>
+            <div
+              class="product-filter-wrap"
+              role="group"
+              aria-label="Filter produk"
+            >
+              <span class="product-filter-indicator" aria-hidden="true"></span>
+              <button
+                class="product-filter-btn active"
+                type="button"
+                data-product-filter="all"
+                aria-pressed="true"
+              >
+                Semua</button
+              ><button
+                class="product-filter-btn"
+                type="button"
+                data-product-filter="indoor"
+                aria-pressed="false"
+              >
+                Indoor</button
+              ><button
+                class="product-filter-btn"
+                type="button"
+                data-product-filter="outdoor"
+                aria-pressed="false"
+              >
+                Outdoor</button
+              ><button
+                class="product-filter-btn"
+                type="button"
+                data-product-filter="merchandise"
+                aria-pressed="false"
+              >
+                Merchandise
+              </button>
+            </div>
+          </div>
+          <div class="product-grid">
+            <article class="product-card" data-category="indoor">
+              <div class="product-card-media">
+                <span class="product-card-badge">Indoor</span
+                ><img src="dump/Frame 85.png" alt="Kalender kustom Ed'Sign" />
+              </div>
+              <div class="product-card-body">
+                <p class="product-card-category">Cetak Promosi</p>
+                <h3>Kalender Kustom</h3>
+                <p>
+                  Kalender desain bisnis untuk hadiah dan promosi sepanjang
+                  tahun.
+                </p>
+                <button
+                  class="product-preview-btn"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productPreviewModal"
+                  data-title="Kalender Kustom"
+                  data-image="dump/Frame 85.png"
+                  data-description="Kalender dengan desain sesuai identitas bisnis Anda untuk hadiah dan promosi sepanjang tahun."
+                  data-details="Ukuran, desain, jenis kertas, dan finishing dapat disesuaikan dengan kebutuhan Anda."
+                >
+                  Preview
+                </button>
+              </div>
+            </article>
+            <article class="product-card" data-category="merchandise">
+              <div class="product-card-media">
+                <span class="product-card-badge">Merchandise</span
+                ><img
+                  src="dump/Frame 86.png"
+                  alt="Tumbler grafir LED Ed'Sign"
+                />
+              </div>
+              <div class="product-card-body">
+                <p class="product-card-category">Souvenir</p>
+                <h3>Tumbler Grafir LED</h3>
+                <p>Tumbler stainless berkesan untuk hadiah dan promosi.</p>
+                <button
+                  class="product-preview-btn"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productPreviewModal"
+                  data-title="Tumbler Grafir LED"
+                  data-image="dump/Frame 86.png"
+                  data-description="Tumbler stainless dengan grafir LED yang berkesan untuk hadiah perusahaan dan kebutuhan promosi."
+                  data-details="Dapat ditambahkan nama atau logo perusahaan sebagai merchandise eksklusif."
+                >
+                  Preview
+                </button>
+              </div>
+            </article>
+            <article class="product-card" data-category="outdoor">
+              <div class="product-card-media">
+                <span class="product-card-badge">Outdoor</span
+                ><img src="dump/frame-37.png" alt="X-banner promosi Ed'Sign" />
+              </div>
+              <div class="product-card-body">
+                <p class="product-card-category">Media Promosi</p>
+                <h3>X-Banner Promosi</h3>
+                <p>Media promosi praktis untuk toko, acara, dan pameran.</p>
+                <button
+                  class="product-preview-btn"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productPreviewModal"
+                  data-title="X-Banner Promosi"
+                  data-image="dump/frame-37.png"
+                  data-description="Media promosi yang praktis, mudah dipasang, dan cocok untuk toko, acara, maupun pameran."
+                  data-details="Ukuran dan desain dapat disesuaikan; sudah termasuk rangka X-banner."
+                >
+                  Preview
+                </button>
+              </div>
+            </article>
+            <article class="product-card" data-category="indoor">
+              <div class="product-card-media">
+                <span class="product-card-badge">Indoor</span
+                ><img src="dump/stiker.jpg" alt="Stiker kustom Ed'Sign" />
+              </div>
+              <div class="product-card-body">
+                <p class="product-card-category">Cetak Label</p>
+                <h3>Stiker Kustom</h3>
+                <p>Stiker untuk label, kemasan, serta materi promosi.</p>
+                <button
+                  class="product-preview-btn"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productPreviewModal"
+                  data-title="Stiker Kustom"
+                  data-image="dump/stiker.jpg"
+                  data-description="Stiker untuk label produk, kemasan, dan materi promosi yang dapat disesuaikan dengan kebutuhan Anda."
+                  data-details="Tersedia pilihan bahan, bentuk potong, ukuran, serta finishing glossy atau matte."
+                >
+                  Preview
+                </button>
+              </div>
+            </article>
+            <article class="product-card" data-category="indoor">
+              <div class="product-card-media">
+                <span class="product-card-badge">Indoor</span
+                ><img src="dump/Frame 85.png" alt="Kalender kustom Ed'Sign" />
+              </div>
+              <div class="product-card-body">
+                <p class="product-card-category">Cetak Promosi</p>
+                <h3>Kalender Kustom</h3>
+                <p>
+                  Kalender desain bisnis untuk hadiah dan promosi sepanjang
+                  tahun.
+                </p>
+                <button
+                  class="product-preview-btn"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productPreviewModal"
+                  data-title="Kalender Kustom"
+                  data-image="dump/Frame 85.png"
+                  data-description="Kalender dengan desain sesuai identitas bisnis Anda untuk hadiah dan promosi sepanjang tahun."
+                  data-details="Ukuran, desain, jenis kertas, dan finishing dapat disesuaikan dengan kebutuhan Anda."
+                >
+                  Preview
+                </button>
+              </div>
+            </article>
+            <article class="product-card" data-category="merchandise">
+              <div class="product-card-media">
+                <span class="product-card-badge">Merchandise</span
+                ><img
+                  src="dump/Frame 86.png"
+                  alt="Tumbler grafir LED Ed'Sign"
+                />
+              </div>
+              <div class="product-card-body">
+                <p class="product-card-category">Souvenir</p>
+                <h3>Tumbler Grafir LED</h3>
+                <p>Tumbler stainless berkesan untuk hadiah dan promosi.</p>
+                <button
+                  class="product-preview-btn"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productPreviewModal"
+                  data-title="Tumbler Grafir LED"
+                  data-image="dump/Frame 86.png"
+                  data-description="Tumbler stainless dengan grafir LED yang berkesan untuk hadiah perusahaan dan kebutuhan promosi."
+                  data-details="Dapat ditambahkan nama atau logo perusahaan sebagai merchandise eksklusif."
+                >
+                  Preview
+                </button>
+              </div>
+            </article>
+            <article class="product-card" data-category="outdoor">
+              <div class="product-card-media">
+                <span class="product-card-badge">Outdoor</span
+                ><img src="dump/frame-37.png" alt="X-banner promosi Ed'Sign" />
+              </div>
+              <div class="product-card-body">
+                <p class="product-card-category">Media Promosi</p>
+                <h3>X-Banner Promosi</h3>
+                <p>Media promosi praktis untuk toko, acara, dan pameran.</p>
+                <button
+                  class="product-preview-btn"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productPreviewModal"
+                  data-title="X-Banner Promosi"
+                  data-image="dump/frame-37.png"
+                  data-description="Media promosi yang praktis, mudah dipasang, dan cocok untuk toko, acara, maupun pameran."
+                  data-details="Ukuran dan desain dapat disesuaikan; sudah termasuk rangka X-banner."
+                >
+                  Preview
+                </button>
+              </div>
+            </article>
+            <article class="product-card" data-category="indoor">
+              <div class="product-card-media">
+                <span class="product-card-badge">Indoor</span
+                ><img src="dump/stiker.jpg" alt="Stiker kustom Ed'Sign" />
+              </div>
+              <div class="product-card-body">
+                <p class="product-card-category">Cetak Label</p>
+                <h3>Stiker Kustom</h3>
+                <p>Stiker untuk label, kemasan, serta materi promosi.</p>
+                <button
+                  class="product-preview-btn"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productPreviewModal"
+                  data-title="Stiker Kustom"
+                  data-image="dump/stiker.jpg"
+                  data-description="Stiker untuk label produk, kemasan, dan materi promosi yang dapat disesuaikan dengan kebutuhan Anda."
+                  data-details="Tersedia pilihan bahan, bentuk potong, ukuran, serta finishing glossy atau matte."
+                >
+                  Preview
+                </button>
+              </div>
+            </article>
+            <article class="product-card" data-category="indoor">
+              <div class="product-card-media">
+                <span class="product-card-badge">Indoor</span
+                ><img src="dump/Frame 85.png" alt="Kalender kustom Ed'Sign" />
+              </div>
+              <div class="product-card-body">
+                <p class="product-card-category">Cetak Promosi</p>
+                <h3>Kalender Kustom</h3>
+                <p>
+                  Kalender desain bisnis untuk hadiah dan promosi sepanjang
+                  tahun.
+                </p>
+                <button
+                  class="product-preview-btn"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productPreviewModal"
+                  data-title="Kalender Kustom"
+                  data-image="dump/Frame 85.png"
+                  data-description="Kalender dengan desain sesuai identitas bisnis Anda untuk hadiah dan promosi sepanjang tahun."
+                  data-details="Ukuran, desain, jenis kertas, dan finishing dapat disesuaikan dengan kebutuhan Anda."
+                >
+                  Preview
+                </button>
+              </div>
+            </article>
+            <article class="product-card" data-category="merchandise">
+              <div class="product-card-media">
+                <span class="product-card-badge">Merchandise</span
+                ><img
+                  src="dump/Frame 86.png"
+                  alt="Tumbler grafir LED Ed'Sign"
+                />
+              </div>
+              <div class="product-card-body">
+                <p class="product-card-category">Souvenir</p>
+                <h3>Tumbler Grafir LED</h3>
+                <p>Tumbler stainless berkesan untuk hadiah dan promosi.</p>
+                <button
+                  class="product-preview-btn"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productPreviewModal"
+                  data-title="Tumbler Grafir LED"
+                  data-image="dump/Frame 86.png"
+                  data-description="Tumbler stainless dengan grafir LED yang berkesan untuk hadiah perusahaan dan kebutuhan promosi."
+                  data-details="Dapat ditambahkan nama atau logo perusahaan sebagai merchandise eksklusif."
+                >
+                  Preview
+                </button>
+              </div>
+            </article>
+            <article class="product-card" data-category="outdoor">
+              <div class="product-card-media">
+                <span class="product-card-badge">Outdoor</span
+                ><img src="dump/frame-37.png" alt="X-banner promosi Ed'Sign" />
+              </div>
+              <div class="product-card-body">
+                <p class="product-card-category">Media Promosi</p>
+                <h3>X-Banner Promosi</h3>
+                <p>Media promosi praktis untuk toko, acara, dan pameran.</p>
+                <button
+                  class="product-preview-btn"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productPreviewModal"
+                  data-title="X-Banner Promosi"
+                  data-image="dump/frame-37.png"
+                  data-description="Media promosi yang praktis, mudah dipasang, dan cocok untuk toko, acara, maupun pameran."
+                  data-details="Ukuran dan desain dapat disesuaikan; sudah termasuk rangka X-banner."
+                >
+                  Preview
+                </button>
+              </div>
+            </article>
+            <article class="product-card" data-category="indoor">
+              <div class="product-card-media">
+                <span class="product-card-badge">Indoor</span
+                ><img src="dump/stiker.jpg" alt="Stiker kustom Ed'Sign" />
+              </div>
+              <div class="product-card-body">
+                <p class="product-card-category">Cetak Label</p>
+                <h3>Stiker Kustom</h3>
+                <p>Stiker untuk label, kemasan, serta materi promosi.</p>
+                <button
+                  class="product-preview-btn"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productPreviewModal"
+                  data-title="Stiker Kustom"
+                  data-image="dump/stiker.jpg"
+                  data-description="Stiker untuk label produk, kemasan, dan materi promosi yang dapat disesuaikan dengan kebutuhan Anda."
+                  data-details="Tersedia pilihan bahan, bentuk potong, ukuran, serta finishing glossy atau matte."
+                >
+                  Preview
+                </button>
+              </div>
+            </article>
+            <article class="product-card" data-category="indoor">
+              <div class="product-card-media">
+                <span class="product-card-badge">Indoor</span
+                ><img src="dump/Frame 85.png" alt="Kalender kustom Ed'Sign" />
+              </div>
+              <div class="product-card-body">
+                <p class="product-card-category">Cetak Promosi</p>
+                <h3>Kalender Kustom</h3>
+                <p>
+                  Kalender desain bisnis untuk hadiah dan promosi sepanjang
+                  tahun.
+                </p>
+                <button
+                  class="product-preview-btn"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productPreviewModal"
+                  data-title="Kalender Kustom"
+                  data-image="dump/Frame 85.png"
+                  data-description="Kalender dengan desain sesuai identitas bisnis Anda untuk hadiah dan promosi sepanjang tahun."
+                  data-details="Ukuran, desain, jenis kertas, dan finishing dapat disesuaikan dengan kebutuhan Anda."
+                >
+                  Preview
+                </button>
+              </div>
+            </article>
+            <article class="product-card" data-category="merchandise">
+              <div class="product-card-media">
+                <span class="product-card-badge">Merchandise</span
+                ><img
+                  src="dump/Frame 86.png"
+                  alt="Tumbler grafir LED Ed'Sign"
+                />
+              </div>
+              <div class="product-card-body">
+                <p class="product-card-category">Souvenir</p>
+                <h3>Tumbler Grafir LED</h3>
+                <p>Tumbler stainless berkesan untuk hadiah dan promosi.</p>
+                <button
+                  class="product-preview-btn"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productPreviewModal"
+                  data-title="Tumbler Grafir LED"
+                  data-image="dump/Frame 86.png"
+                  data-description="Tumbler stainless dengan grafir LED yang berkesan untuk hadiah perusahaan dan kebutuhan promosi."
+                  data-details="Dapat ditambahkan nama atau logo perusahaan sebagai merchandise eksklusif."
+                >
+                  Preview
+                </button>
+              </div>
+            </article>
+            <article class="product-card" data-category="outdoor">
+              <div class="product-card-media">
+                <span class="product-card-badge">Outdoor</span
+                ><img src="dump/frame-37.png" alt="X-banner promosi Ed'Sign" />
+              </div>
+              <div class="product-card-body">
+                <p class="product-card-category">Media Promosi</p>
+                <h3>X-Banner Promosi</h3>
+                <p>Media promosi praktis untuk toko, acara, dan pameran.</p>
+                <button
+                  class="product-preview-btn"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productPreviewModal"
+                  data-title="X-Banner Promosi"
+                  data-image="dump/frame-37.png"
+                  data-description="Media promosi yang praktis, mudah dipasang, dan cocok untuk toko, acara, maupun pameran."
+                  data-details="Ukuran dan desain dapat disesuaikan; sudah termasuk rangka X-banner."
+                >
+                  Preview
+                </button>
+              </div>
+            </article>
+            <article class="product-card" data-category="indoor">
+              <div class="product-card-media">
+                <span class="product-card-badge">Indoor</span
+                ><img src="dump/stiker.jpg" alt="Stiker kustom Ed'Sign" />
+              </div>
+              <div class="product-card-body">
+                <p class="product-card-category">Cetak Label</p>
+                <h3>Stiker Kustom</h3>
+                <p>Stiker untuk label, kemasan, serta materi promosi.</p>
+                <button
+                  class="product-preview-btn"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productPreviewModal"
+                  data-title="Stiker Kustom"
+                  data-image="dump/stiker.jpg"
+                  data-description="Stiker untuk label produk, kemasan, dan materi promosi yang dapat disesuaikan dengan kebutuhan Anda."
+                  data-details="Tersedia pilihan bahan, bentuk potong, ukuran, serta finishing glossy atau matte."
+                >
+                  Preview
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
     <div
       class="modal fade"
       id="productPreviewModal"
@@ -638,179 +547,48 @@
       aria-labelledby="productPreviewModalLabel"
       aria-hidden="true"
     >
-
       <div class="modal-dialog modal-dialog-centered modal-lg">
-
         <div class="modal-content product-preview-modal">
-
           <div class="modal-header border-0">
-
-            <h5
-              class="modal-title fw-bold"
-              id="productPreviewModalLabel"
-            >
-              Preview Produk
-            </h5>
-
+            <h2 class="modal-title h5 fw-bold" id="productPreviewModalLabel">
+              Lihat: Produk
+            </h2>
             <button
               type="button"
               class="btn-close"
               data-bs-dismiss="modal"
               aria-label="Tutup"
             ></button>
-
           </div>
-
-
           <div class="modal-body p-0">
-
             <div class="row g-0">
-
               <div class="col-md-5">
-
                 <img
                   id="modalProductImage"
                   src=""
                   alt="Preview produk"
                   class="img-fluid h-100 w-100 preview-modal-image"
                 />
-
               </div>
-
-
               <div
                 class="col-md-7 p-4 d-flex flex-column justify-content-center"
               >
-
-                <h3
-                  id="modalProductTitle"
-                  class="fw-bold mb-3"
-                ></h3>
-
-                <p
-                  id="modalProductDescription"
-                  class="text-muted mb-3"
-                ></p>
-
-                <div
-                  id="modalProductDetails"
-                  class="small text-dark"
-                ></div>
-
+                <h3 id="modalProductTitle" class="fw-bold mb-3"></h3>
+                <p id="modalProductDescription" class="text-muted mb-3"></p>
+                <p id="modalProductDetails" class="small text-dark mb-0"></p>
                 <a
                   href="https://wa.me/6281316165756"
                   class="btn btn-warning text-white no-radius mt-4 align-self-start"
-                >
-                  Pesan Sekarang
-                </a>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </main>
-  <footer class="site-footer bg-white text-dark">
-      <div class="container py-5">
-        <div class="row g-4">
-          <div class="col-12 col-md-6 col-lg-3">
-            <h2 class="footer-logo h3">Edsign.</h2>
-            <p class="footer-desc">
-              Mitra percetakan digital yang membantu Anda mencetak kebutuhan
-              promosi, branding, dan identitas bisnis dengan kualitas terbaik.
-            </p>
-            <div class="social-links">
-              <a
-                class="me-3 text-decoration-none text-muted"
-                href="https://wa.me/6281316165756"
-                target="_blank"
-                rel="noopener noreferrer"
-                >WhatsApp</a
-              >
-              <a
-                class="text-decoration-none text-muted"
-                href="https://shopee.co.id/edsigndigitalprint"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Shopee</a
-              >
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3">
-            <h2 class="h5">Layanan</h2>
-            <ul class="list-unstyled small mb-0">
-              <li>
-                <a class="text-muted text-decoration-none" href="#produk"
-                  >Katalog Produk</a
-                >
-              </li>
-              <li>
-                <a class="text-muted text-decoration-none" href="#produk"
-                  >Klien Kami</a
-                >
-              </li>
-              <li>
-                <a
-                  class="text-muted text-decoration-none"
-                  href="https://wa.me/6281316165756"
-                  target="_blank"
-                  rel="noopener noreferrer"
                   >Pesan Sekarang</a
                 >
-              </li>
-            </ul>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3">
-            <h2 class="h5">Perusahaan</h2>
-            <ul class="list-unstyled small mb-0">
-              <li>
-                <a class="text-muted text-decoration-none" href="#home"
-                  >Beranda</a
-                >
-              </li>
-              <li>
-                <a class="text-muted text-decoration-none" href="#produk"
-                  >Katalog</a
-                >
-              </li>
-              <li>
-                <a class="text-muted text-decoration-none" href="tentang.html"
-                  >Mitra</a
-                >
-              </li>
-              <li>
-                <a
-                  class="text-muted text-decoration-none"
-                  href="https://wa.me/6281316165756"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Kontak</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3">
-            <h2 class="h5">Hubungi Kami</h2>
-            <p class="small text-muted">
-              Butuh konsultasi cepat untuk kebutuhan cetak Anda? Langsung
-              hubungi tim kami melalui WhatsApp.
-            </p>
-            <a
-              class="btn btn-outline-primary btn-sm"
-              href="https://wa.me/6281316165756"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Konsultasi Sekarang</a
-            >
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+    </div>
+    <footer class="site-footer bg-white text-dark">
+      <div class="container py-5">
         <div class="row mt-4 pt-3 border-top">
           <div class="col-md-6">
             <p class="mb-0 small">
@@ -824,13 +602,9 @@
         </div>
       </div>
     </footer>
-
-
-  <!-- JAVASCRIPT -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/site.js"></script>
     <script src="js/product-filter.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> <script src="js/site.js"></script> <script src="js/product-filter.js"></script>
-
-</body>
+    <script src="js/product-preview.js"></script>
+  </body>
 </html>
