@@ -1,13 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
   const filterButtons = document.querySelectorAll(
-    "[data-product-filter], [data-filter]"
+    ".product-filter-btn[data-product-filter]"
   );
-  const productCards = document.querySelectorAll(
-    ".product-card[data-category], .product-item[data-category]"
-  );
+  const productCards = document.querySelectorAll(".product-card[data-category]");
   const filterWrap = document.querySelector(".product-filter-wrap");
   const filterIndicator = document.querySelector(
-    ".product-filter-indicator, .product-filter-slider"
+    ".product-filter-indicator"
   );
 
   const moveFilterIndicator = (button) => {
@@ -18,7 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   filterButtons.forEach((button) => {
     button.addEventListener("click", () => {
-      const selectedCategory = button.dataset.productFilter || button.dataset.filter;
+      const selectedCategory = button.dataset.productFilter;
+      if (!selectedCategory) return;
 
       filterButtons.forEach((filterButton) => {
         const isActive = filterButton === button;
@@ -37,8 +36,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  moveFilterIndicator(document.querySelector(".product-filter-btn.active"));
-  window.addEventListener("resize", () => {
-    moveFilterIndicator(document.querySelector(".product-filter-btn.active"));
+  const getActiveButton = () =>
+    document.querySelector(".product-filter-btn.active[data-product-filter]");
+  moveFilterIndicator(getActiveButton());
+  window.addEventListener("resize", () => moveFilterIndicator(getActiveButton()), {
+    passive: true,
   });
 });

@@ -6,11 +6,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll(".product-preview-btn").forEach((button) => {
     button.addEventListener("click", () => {
-      modalImage.src = button.dataset.image || "";
-      modalImage.alt = button.dataset.title || "Preview produk";
-      modalTitle.textContent = button.dataset.title || "";
-      modalDescription.textContent = button.dataset.description || "";
-      modalDetails.textContent = button.dataset.details || "";
+      if (modalImage) {
+        if (button.dataset.image) modalImage.src = button.dataset.image;
+        modalImage.alt = button.dataset.title || "Preview produk";
+      }
+      if (modalTitle) modalTitle.textContent = button.dataset.title || "";
+      if (modalDescription) {
+        modalDescription.textContent = button.dataset.description || "";
+      }
+      if (modalDetails) modalDetails.textContent = button.dataset.details || "";
     });
   });
 });
