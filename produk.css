@@ -69,6 +69,18 @@
   object-fit: cover;
 }
 
+#modalProductDescription,
+#modalProductDetails {
+  display: block;
+  width: 100%;
+  line-height: 1.4;
+}
+
+#modalProductDetails {
+  white-space: pre-line;
+  line-height: 1.35;
+}
+
 /* HEADER KATALOG */
 .catalog-header {
   display: flex;
