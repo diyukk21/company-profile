@@ -528,24 +528,42 @@ body {
   }
 
   .client-logo {
-    display: grid;
-    min-height: 132px;
-    place-items: center;
-    padding: 1.6rem;
+  display: grid;
+  min-height: 132px;
+  place-items: center;
+  padding: 1.6rem;
+}
+
+.client-logo img {
+  width: auto;
+  max-width: 200px;
+  height: auto;
+  max-height: 93px;
+  object-fit: contain;
+  filter: grayscale(0);
+  opacity: 0.8;
+  transition:
+    filter 0.2s,
+    opacity 0.2s,
+    transform 0.2s;
+}
+
+@media (max-width: 767.98px) {
+  .clients-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .client-logo {
+    min-height: 150px;
+    padding: 1.5rem;
   }
 
   .client-logo img {
-    width: 100%;
-    max-width: 200px;
-    max-height: 93px;
-    object-fit: contain;
-    filter: grayscale(0);
-    opacity: 0.8;
-    transition:
-      filter 0.2s,
-      opacity 0.2s,
-      transform 0.2s;
+    width: auto;
+    max-width: 180px;
+    max-height: 80px;
   }
+}
 
   .client-logo:hover img {
     filter: grayscale(0);
